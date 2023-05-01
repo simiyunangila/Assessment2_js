@@ -40,8 +40,14 @@ console.log(addNewBook());
 // the book's isAvailable property to false. If the book is not found in the library, the
 // function should return a message indicating that the book is not available.
 function checkoutBook(){
-    
+    for (let b=0; b< books.length;b++){
+        if (books.isAvailable==true){
+            return"book is available"
+        }
+    }
+
 }
+console.log(checkoutBook(books));
 
 
 // 5. Create a function returnBook that takes a book title as an argument and changes the
